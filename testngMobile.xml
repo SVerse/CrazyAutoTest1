@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<suite name="Suite" parallel="tests" thread-count="1">
+
+	<listeners><!-- 监听器设置，生成测试报告的监听器，不要改此处代码 -->
+ 		<listener class-name="com.crazy.auto.listeners.ExtentIReporterListenerUtil"></listener><!--extentreport报告的监听 -->
+<!-- 		<listener class-name="org.uncommons.reportng.HTMLReporter" />reprotng报告的监听 -->
+		<!-- <listener class-name="com.crazy.auto.listeners.RetryListener"/> --><!-- 这是失败重试的监听 -->
+		<listener class-name='com.crazy.auto.listeners.TestListener'/><!--失败截图的监听 -->
+
+	</listeners>
+	
+	<test name="android模拟器">
+		<parameter name="platform" value="android" />
+		<parameter name="udid" value="127.0.0.1:62001" />
+		<parameter name="port" value="4490" />
+		<parameter name="username" value="18729399607" />
+		<parameter name="chromedriverpath" value="D:\eclipse-workspace\CrazyAutoTest1\drivers\chromedriver.exe" />
+		<classes>
+				<class name="com.crazy.mty.tests.MTYTests" />
+		</classes>
+	</test>
+	
+<!-- 	<test name="android华为">
+		<parameter name="platform" value="android" />
+		<parameter name="udid" value="TUP4C19104003285" />
+		<parameter name="port" value="4491" />
+		<parameter name="username" value="18729399607" />
+		<classes>
+				<class name="com.crazy.tests.DouBanTests" />
+		</classes>
+	</test>
+	<test name="ios">
+		<parameter name="platform" value="ios" />
+		<parameter name="udid" value="0dc6e095cd81e1139a49f67ea4d5e44911485fde" />
+		<parameter name="port" value="4491" />
+		<parameter name="username" value="18910596413" />
+		<classes>
+				<class name="com.crazy.tests.DouBanTests" />
+		</classes> 
+	</test>
+	<test name="mtx商城">
+		<parameter name="browserType" value="chrome" />
+		<classes>
+				<class name="com.crazy.tests.MallHouTests1223" />
+				<class name="com.crazy.tests.MallTests0308" />
+				<class name="com.crazy.tests.MTXCases" />
+		</classes>
+	</test> -->
+
+</suite>  

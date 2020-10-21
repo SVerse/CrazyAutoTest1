@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--整个对象库文件的根目录，管理整个项目的对象-->
+<map>
+    <page pagename="com.testfan.ui.auto.xml.pageObject.HomePage" value="" desc="javamall首页">
+        <locator type="partialLinkText" timeout="3" value="登录 "  desc="登录链接">loginLink</locator>
+        <locator type="linkText" timeout="3" value="商城首页 "  desc="商城首页">homelink</locator>
+        <locator type="cssSelector" timeout="3" value=".unusual li>a"  desc="商品">goods</locator>
+    </page>
+    <page pagename="com.testfan.ui.auto.xml.pageObject.LoginPage" value="" desc="javamall登录页面">
+        <locator type="id" timeout="5" value="username" desc="用户名">username</locator>
+ 	    <locator type="id" timeout="5" value="password" desc="密码">password</locator>
+ 	    <locator type="id" timeout="5" value="validcode" desc="验证码">validcode</locator>
+ 	    <locator type="cssSelector" timeout="5" value=".m_register.btn>input" desc="登录按钮">loginBtn</locator>
+    </page>
+    
+    <page pagename="com.testfan.ui.auto.xml.pageObject.GoodDetailPage" value="" desc="商品详情页">
+        <locator type="id" timeout="3" value="buyNow "  desc="立即购买">buyNow</locator>
+    </page>
+    <page pagename="com.testfan.ui.auto.xml.pageObject.MyCartPage" value="" desc="购物车界面">
+        <locator type="xpath" timeout="3" value="//*[@value='去结算']"  desc="去结算">checkout</locator>
+    </page>
+    <page pagename="com.testfan.ui.auto.xml.pageObject.OrderInfoConfirmPage" value="" desc="填写核对订单页">
+        <locator type="id" timeout="3" value="saveAddrBtn"  desc="确认收货地址">saveAddrBtn</locator>
+        <locator type="id" timeout="3" value="savePaymentBtn"  desc="确认付款方式">savePaymentBtn</locator>
+        <locator type="id" timeout="3" value="saveDlytypeBtn"  desc="确认配送方式">saveDlytypeBtn</locator>
+        <locator type="id" timeout="3" value="createBtn"  desc="提交订单">createBtn</locator>
+    </page>
+    
+    <page pagename="com.testfan.ui.auto.xml.pageObject.HouHomePage" value="" desc="后台首页">
+        <locator type="id" timeout="3" value="parent15"  desc="订单菜单">menuOrder</locator>
+        <locator type="linktext" timeout="3" value="订单列表"  desc="订单列表">orderlink</locator>
+        <locator type="linktext" timeout="3" value="退货单"  desc="退货单列表">returnedlink</locator>
+        <locator type="xpath" timeout="3" value="(//iframe)[2]" desc="iframe">iframe</locator>
+    </page>  
+    <page pagename="com.testfan.ui.auto.xml.pageObject.HouOrderListPage" value="" desc="订单列表">
+        <locator type="xpath" timeout="3" value="//div[text()='未付款']/../../td[2]"  desc="未付款的订单">noPayOrderSN</locator>
+        <locator type="xpath" timeout="3" value="//div[text()='已付款']/../following-sibling::td[2]/div[text()='未发货']/../../td[2]"  desc="未发货的订单">noShip</locator>
+        <locator type="xpath" timeout="3" value="//div[text()='已发货']/../../td[2]"  desc="未收货的订单">noRog</locator>
+        <locator type="xpath" timeout="3" value="//div[text()='已完成']/../../td[2]"  desc="可以退货的订单">returned</locator>        
+        <locator type="xpath" timeout="3" value="(//iframe)[3]"  desc="订单详情">orderDetaile</locator>     
+    </page>
+    <page pagename="com.testfan.ui.auto.xml.pageObject.HouOrderDetailPage" value="" desc="订单详情">
+        <locator type="id" timeout="3" value="pay"  desc="确认收款">confirmPay</locator>
+        <locator type="id" timeout="3" value="ship"  desc="发货">ship</locator>
+        <locator type="id" timeout="3" value="rog"  desc="确认收货">rog</locator>
+        <locator type="id" timeout="3" value="returned"  desc="退货">returned</locator>
+        <locator type="xpath" timeout="3" value="//div[@id='orderinfo']//*[text()='保存']"  desc="保存">save</locator>
+        <locator type="xpath" timeout="3" value="(//iframe)[4]"  desc="申请退货">returnedFrame</locator>
+    </page>
+    <page pagename="com.testfan.ui.auto.xml.pageObject.HouReturnedPage" value="" desc="申请退货">
+        <locator type="id" timeout="3" value="alltotal_pay"  desc="应退现金">alltotal_pay</locator>
+        <locator type="xpath" timeout="3" value="//*[@onclick='submitForm()']"  desc="提交申请">submit</locator>
+    </page>
+    <page pagename="com.testfan.ui.auto.xml.pageObject.HouReturnedListPage" value="" desc="退货单列表">
+        <locator type="xpath" timeout="3" value="//div[text()='待入库']/../../td[last()]"  desc="待入库的退货单">daiRuKu</locator>
+        <locator type="xpath" timeout="3" value="//div[text()='已入库']/../../td[last()]"  desc="待结算的退货单">daiJieSuan</locator>
+        <locator type="xpath" timeout="3" value="(//iframe)[3]"  desc="退货入库的frame">rukuFrame</locator>
+    </page>
+   	<page pagename="com.testfan.ui.auto.xml.pageObject.HouRukuPage" value="" desc="退货入库界面">
+   	
+   	    <locator type="id" timeout="3" value="storageNums"  desc="入库数量">storageNums</locator>
+        <locator type="id" timeout="3" value="submit"  desc="确认入库">submit</locator>
+        <locator type="xpath" timeout="3" value="//*[text()='取消退货']"  desc="取消退货">cancue</locator>
+    </page>
+</map>

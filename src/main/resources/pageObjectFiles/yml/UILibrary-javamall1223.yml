@@ -1,0 +1,55 @@
+pages:
+    - page:
+        pageName: com.testfan.ui.auto.pageObject.HomePage1223
+        value: http://localhost:8080/javamall
+        desc: javamall首页
+        locators:
+            - {type: "partialLinkText",timeout: "5",value: "注册",desc: "这是首页上注册",name: "register"}
+            - {type: "partialLinkText",timeout: "5",value: "登录",desc: "这是首页上登录",name: "loginlink"}
+            - {type: "partialLinkText",timeout: "5",value: "会员中心",desc: "这是首页上会员中心",name: "会员中心"}                       
+    - page:
+        pageName: com.testfan.ui.auto.pageObject.RegisterPage1223
+        value: http://localhost:8080/javamall
+        desc: javamall注册
+        locators:
+            - {type: "id",timeout: "5",value: "username",desc: "用户名",name: "username"}
+            - {type: "id",timeout: "5",value: "reg_email",desc: "注册邮箱",name: "reg_email"}
+            - {type: "id",timeout: "5",value: "password",desc: "密码",name: "password"}
+            - {type: "id",timeout: "5",value: "reg_passwd_r",desc: "确认密码",name: "reg_passwd_r"}
+            - {type: "id",timeout: "5",value: "iptlogin",desc: "验证码",name: "iptlogin"}
+            - {type: "cssSelector",timeout: "5",value: ".m_register.btn>input",desc: "注册按钮",name: "registerBtn"}
+    - page:
+        pageName: com.testfan.ui.auto.pageObject.LoginPage1223
+        value: http://localhost:8080/javamall
+        desc: javamall登录
+        locators:
+            - {type: "id",timeout: "5",value: "username",desc: "用户名",name: "username"}
+            - {type: "id",timeout: "5",value: "password",desc: "密码",name: "password"}
+            - {type: "id",timeout: "5",value: "validcode",desc: "验证码",name: "validcode"}
+            - {type: "cssSelector",timeout: "5",value: ".m_register.btn>input",desc: "登录按钮",name: "loginBtn"}
+    - page:
+        pageName: com.testfan.ui.auto.pageObject.MemberPage1223
+        value: http://localhost:8080/javamall
+        desc: 会员首页
+        locators:
+            - {type: "partialLinkText",timeout: "5",value: "修改个人资料",desc: "修改个人资料链接",name: "修改个人资料"}   
+            - {type: "linkText",timeout: "5",value: "上传会员头像",desc: " 上传会员头像",name: "uploadHeader"}
+            - {type: "cssselector",timeout: "5",value: ".userico",desc: "用户头像",name: "userico"}
+            
+    - page:
+        pageName: com.testfan.ui.auto.pageObject.UserInfoPage1223
+        value: http://localhost:8080/javamall
+        desc: javamall用户信息页
+        locators:
+            - {type: "name",timeout: "5",value: "nickname",desc: "真实姓名",name: "nickname"}
+            - {type: "name",timeout: "5",value: "sex",desc: "性别",name: "sex"}
+            - {type: "name",timeout: "5",value: "mybirthday",desc: "生日",name: "mybirthday"}
+            - {type: "name",timeout: "5",value: "province_id",desc: "省",name: "province_id"}
+            - {type: "name",timeout: "5",value: "city_id",desc: "市",name: "city_id"}
+            - {type: "name",timeout: "5",value: "region_id",desc: "区",name: "region_id"}
+            - {type: "name",timeout: "5",value: "address",desc: "联系地址",name: "address"}
+            - {type: "name",timeout: "5",value: "zip",desc: "邮编",name: "zip"}
+            - {type: "name",timeout: "5",value: "mobile",desc: "手机号",name: "mobile"}            
+            - {type: "name",timeout: "5",value: "tel",desc: "固定电话",name: "tel"}            
+            - {type: "name",timeout: "5",value: "btnSubmit",desc: "保存资料",name: "btnSubmit"}   
+            - {type: "name",timeout: "5",value: "file",desc: "选择文件",name: "selectFile"}                    

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--整个对象库文件的根目录，管理整个项目的对象-->
+<map>
+    <page pagename="com.testfan.ui.auto.xml.pageObject.HomePage" value="" desc="javamall首页">
+        <!-- <locator type="partialLinkText" timeout="3" value="登录 "  desc="登录链接">loginLink</locator> -->
+        <locator type="partialLinkText" timeout="3" value="登录" desc="登录链接">loginLink</locator>
+    </page>
+    <page pagename="com.testfan.ui.auto.xml.pageObject.LoginPage" value="" desc="javamall登录页面">
+        <!-- <locator type="partialLinkText" timeout="3" value="登录 "  desc="登录链接">loginLink</locator> -->
+        <locator type="name" timeout="3" value="username" desc="用户名">username</locator>
+        <locator type="id" timeout="3" value="password" desc="密码">password</locator>
+        <locator type="id" timeout="3" value="validcode" desc="验证码">validcode</locator>
+        <locator type="cssselector" timeout="3" value=".blue_btn" desc="登录按钮">loginBtn</locator>
+    </page>
+</map>

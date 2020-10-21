@@ -1,0 +1,59 @@
+pages:
+    - page: 
+        pageName: com.testfan.ui.auto.pageObject.LoginPage
+        value: http://localhost:8080/javamall
+        desc: javamall登录
+        locators:
+            - {type: "partialLinkText",timeout: "5",value: "登录",desc: "loginBtn",name: "loginBtn"}
+            - {type: "name",timeout: "5",value: "username",desc: "用户名",name: "username"}
+            - {type: "name",timeout: "5",value: "password",desc: "密码",name: "password"}
+            - {type: "id",timeout: "5",value: "validcode",desc: "验证码",name: "validcode"}
+            - {type: "xpath",timeout: "5",value: "//*[@value='登  录']",desc: "登录按钮",name: "login"}
+            
+            
+    - page: 
+        pageName: com.testfan.ui.auto.pageObject.HomePage
+        value: http://localhost:8080/javamall
+        desc: 首页
+        locators:
+            - {type: "xpath",timeout: "5",value: "//*[@id='floor_1']/div[2]/div[2]/ul/li[1]/a",desc: "商品链接",name: "product"}
+            - {type: "xpath",timeout: "5",value: "//*[@class='login_bar']/ul/li[2]/a",desc: "会员中心",name: "member"}
+            - {type: "linkText",timeout: "5",value: "商城首页",desc: "商城首页",name: "shouye"}
+            
+    - page: 
+        pageName: com.testfan.ui.auto.pageObject.ProductPage
+        value: http://localhost:8080/javamall
+        desc: 产品页
+        locators:
+            - {type: "id",timeout: "5",value: "buyNow",desc: "立即购买",name: "buyNow"}
+    - page: 
+        pageName: com.testfan.ui.auto.pageObject.OrderPage
+        value: http://localhost:8080/javamall
+        desc: 下单
+        locators:
+            - {type: "xpath",timeout: "5",value: "//*[@value='去结算']",desc: "去结算",name: "checkout"}
+            - {type: "id",timeout: "5",value: "saveAddrBtn",desc: "确认收货地址",name: "saveAddrBtn"}
+            - {type: "id",timeout: "5",value: "savePaymentBtn",desc: "确认付款方式",name: "savePaymentBtn"}
+            - {type: "id",timeout: "5",value: "saveDlytypeBtn",desc: "确认配送方式",name: "saveDlytypeBtn"} 
+            - {type: "id",timeout: "5",value: "createBtn",desc: "提交订单",name: "createBtn"}
+    - page: 
+        pageName: com.testfan.ui.auto.pageObject.MemberPage
+        value: http://localhost:8080/javamall
+        desc: 会员中心
+        locators:
+            - {type: "cssSelector",timeout: "5",value: "[href='info.html']",desc: "修改个人资料",name: "personinfo"}
+            - {type: "xpath",timeout: "5",value: "//*[@name='nickname']",desc: "真实姓名",name: "name"}
+            - {type: "xpath",timeout: "5",value: "//*[@name='sex']",desc: "性别",name: "sex"}
+            - {type: "xpath",timeout: "5",value: "//*[@name='mybirthday']",desc: "生日",name: "mybirthday"}
+            - {type: "xpath",timeout: "5",value: "//*[@name='btnSubmit']",desc: "保存资料",name: "btnSubmit"} 
+            - {type: "cssSelector",timeout: "5",value: ".userico",desc: "头像",name: "userico"} 
+            - {type: "cssSelector",timeout: "5",value: ".uploadIco",desc: "上传头像",name: "uploadIco"} 
+            - {type: "cssSelector",timeout: "5",value: "[name='file']",desc: "上传文件",name: "file"} 
+            - {type: "xpath",timeout: "5",value: "//*[@name='province_id']",desc: "省份",name: "province"}            
+            - {type: "xpath",timeout: "5",value: "//*[@name='city_id']",desc: "城市",name: "city"}
+            - {type: "xpath",timeout: "5",value: "//*[@name='region_id']",desc: "城市",name: "region"}
+            - {type: "xpath",timeout: "5",value: "//*[@name='address']",desc: "联系地址",name: "address"}
+            - {type: "xpath",timeout: "5",value: "//*[@name='mobile']",desc: "手机",name: "mobile"}
+            - {type: "xpath",timeout: "5",value: "//*[@name='tel']",desc: "固话",name: "tel"}                        
+            
+      

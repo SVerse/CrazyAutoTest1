@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--整个对象库文件的根目录，管理整个项目的对象-->
+<map>
+    <page pagename="com.testfan.ui.auto.mtx.pageObject.HomePage" value="" desc="mtx首页">
+        <locator type="partialLinkText" timeout="3" value="登录 "  desc="登录链接">loginLink</locator>
+        <locator type="linkText" timeout="3" value="商城首页 "  desc="商城首页">homelink</locator>
+        <locator type="cssSelector" timeout="3" value=".goods-items a"  desc="商品">goods</locator>
+        <locator type="xpath" timeout="3" value="//*[text()='个人中心']" desc="个人中心">personcenter</locator>
+    </page>
+    <page pagename="com.testfan.ui.auto.mtx.pageObject.LoginPage" value="" desc="javamall登录页面">
+        <locator type="name" timeout="5" value="accounts" desc="用户名">username</locator>
+ 	    <locator type="name" timeout="5" value="pwd" desc="密码">password</locator>
+ 	    <locator type="id" timeout="5" value="validcode" desc="验证码">validcode</locator>
+ 	    <locator type="cssSelector" timeout="5" value=".btn-loading-example" desc="登录按钮">loginBtn</locator>
+    </page>
+    
+    <page pagename="com.testfan.ui.auto.mtx.pageObject.GoodDetailPage" value="" desc="商品详情页">
+        <locator type="xpath" timeout="3" value="//*[text()='立即购买']"  desc="立即购买">buyNow</locator>
+        <locator type="cssSelector" timeout="3" value=".payment-list>li"  desc="货到付款">货到付款</locator>
+        <locator type="cssSelector" timeout="3" value=".btn-loading-example" desc="提交订单">提交订单</locator>
+        
+    </page>
+    <page pagename="com.testfan.ui.auto.mtx.pageObject.PersonCenterPage" value="" desc="个人中心页">
+        <locator type="xpath" timeout="3" value="//*[text()='收货'] " desc="收货">收货</locator>
+        <locator type="xpath" timeout="3" value="//*[text()='确定']"  desc="确定">sureBtn</locator>
+        <locator type="xpath" timeout="3" value="//*[text()='评价']" desc="评价">evaluate</locator> 
+        <locator type="xpath" timeout="3" value="//*[text()='退款/售后']" desc="退款/售后标签">refund</locator> 
+        <locator type="xpath" timeout="3" value="//*[contains(text(),'订单管理')]" desc="订单管理菜单">ordermanager</locator>  
+        <locator type="xpath" timeout="3" value="//*[contains(text(),'安全设置')]" desc="安全设置">securitysetting</locator>           
+    </page>
+    <page pagename="com.testfan.ui.auto.mtx.pageObject.OrderManagerPage" value="" desc="订单管理页">
+        <locator type="xpath" timeout="3" value="//*[contains(text(),'申请售后')]"  desc="申请售后">application</locator>
+        <locator type="xpath" timeout="3" value="//*[contains(text(),'退款/退货')]"  desc="退款/退货">refundOrgoods</locator>
+        <locator type="xpath" timeout="3" value="//*[text()='确定']"  desc="货到付款">sureBtn</locator>
+        <locator type="xpath" timeout="3" value="//*[text()='评价']" desc="评价">evaluate</locator> 
+        <locator type="xpath" timeout="3" value="//*[text()='退款/售后']" desc="退款/售后标签">refund</locator> 
+        <locator type="xpath" timeout="3" value="//*[contains(text(),'订单管理')]" desc="订单管理菜单">ordermanager</locator>            
+    </page>
+    <page pagename="com.testfan.ui.auto.mtx.pageObject.SecuritySettingPage" value="" desc="安全设置页">
+        <locator type="linkText" timeout="3" value="修改" desc="登录密码的修改">modify</locator>
+        <locator type="xpath" timeout="3" value="//*[text()='手机号码']/../following-sibling::div//a"  desc="手机号码绑定操作">mobilebinding</locator>
+        <locator type="xpath" timeout="3" value="//*[text()='电子邮箱']/../following-sibling::div//a" desc="电子邮箱绑定操作">emailbinding</locator> 
+        <locator type="name" timeout="3" value="my_pwd" desc="原密码">my_pwd</locator> 
+        <locator type="name" timeout="3" value="new_pwd" desc="新密码">new_pwd</locator>  
+        <locator type="name" timeout="3" value="confirm_new_pwd" desc="确认密码">confirm_new_pwd</locator>           
+    </page>
+    <page pagename="com.testfan.ui.auto.mtx.pageObject.RefundPage" value="" desc="退款/售后页">
+        <locator type="xpath" timeout="3" value="//*[text()='仅退款'] " desc="仅退款">onlyRefund</locator>
+        <locator type="xpath" timeout="3" value="//*[text()='退款退货']"  desc="退款退货">refundAndShip</locator>
+        <locator type="name" timeout="3" value="reason" desc="退款原因">reason</locator>
+        <locator type="name" timeout="3" value="msg"  desc="退款说明">refundMsg</locator>
+        <locator type="xpath" timeout="5" value="//*[text()='提交']" desc="提交">提交</locator>           
+    </page>
+    <page pagename="com.testfan.ui.auto.mtx.pageObject.EvaluatePage" value="" desc="评价页">
+        <locator type="xpath" timeout="3" value="//*[@class='rating-items']//li[5]" desc="五星好评">star5</locator>
+        <locator type="xpath" timeout="3" value="//textarea"  desc="评论输入框">inputcomment</locator>
+        <locator type="cssSelector" timeout="3" value=".am-switch-label" desc="匿名切换">anonymousSwitch</locator> 
+        <locator type="cssSelector" timeout="3" value=".am-switch-handle-on.am-switch-success" desc="匿名状态">anonymousStatus</locator> 
+        <locator type="xpath" timeout="5" value="//*[text()='提交']" desc="提交">submit</locator>   
+    </page>
+    
+    <page pagename="com.testfan.ui.auto.mtx.pageObject.ManagerLoginPage" value="" desc="后台登录页面">
+        <locator type="name" timeout="5" value="username" desc="用户名">username</locator>
+ 	    <locator type="name" timeout="5" value="login_pwd" desc="密码">password</locator>
+ 	    <locator type="cssSelector" timeout="5" value=".btn-loading-example" desc="登录按钮">loginBtn</locator>
+    </page>
+    <page pagename="com.testfan.ui.auto.mtx.pageObject.ManagerHomePage" value="" desc="后台首页">
+        <locator type="xpath" timeout="5" value="//*[text()='订单管理']" desc="订单管理菜单">order</locator>
+ 	    <locator type="xpath" timeout="5" value="//*[@id='power-menu-177']//*[text()='订单管理']" desc="订单管理列表">orderlist</locator>
+ 	    <locator type="id" timeout="5" value="ifcontent" desc="订单列表iframe">orderframe</locator>
+ 	    
+    </page>
+    <page pagename="com.testfan.ui.auto.mtx.pageObject.ManagerOrderListPage" value="" desc="订单列表">
+        <locator type="xpath" timeout="3" value="//*[text()='待发货']/../..//button[contains(text(),'发货')]"  desc="未发货的订单的发货">noShip</locator>
+        <locator type="cssSelector" timeout="3" value=".express-items-1"  desc="第一个快递">express</locator> 
+        <locator type="name" timeout="3" value="express_number"  desc="快递单号">expressNum</locator>
+        <locator type="xpath" timeout="3" value="//input[@name='express_id']/following-sibling::button" desc="确认">确认</locator> 
+        <locator type="xpath" timeout="3" value="//div[text()='已发货']/../../td[2]"  desc="未收货的订单的收货操作">noRog</locator>
+        <locator type="xpath" timeout="3" value="//div[text()='已完成']/../../td[2]"  desc="可以退货的订单的退货操作">returned</locator>        
+        <locator type="xpath" timeout="3" value="(//iframe)[3]"  desc="订单详情">orderDetaile</locator>     
+    </page>
+
+</map>

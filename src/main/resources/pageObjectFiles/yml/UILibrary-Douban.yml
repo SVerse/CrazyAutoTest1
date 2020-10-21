@@ -1,0 +1,31 @@
+pages:
+    - page:
+        pageName: com.testfan.ui.auto.yml.douban.pageObject.HomePage
+        value: 
+        desc: 首页
+        locators:
+            - {type: "xpath",timeout: "5",value: "//*[@text='我的']",desc: "我的",name: "mine_menu"}
+            - {type: "xpath",timeout: "5",value: "//*[@text='首页']",desc: "首页",name: "home_menu"}
+            - {type: "xpath",timeout: "5",value: "//*[@text='书影音']",desc: "书影音",name: "book_menu"} 
+            - {type: "xpath",timeout: "5",value: "//*[@text='小组']",desc: "小组",name: "group_menu"}
+            - {type: "xpath",timeout: "5",value: "//*[@text='市集']",desc: "市集",name: "market_menu"}
+            - {type: "accessibilityid",timeout: "5",value: "我的",desc: "我的",name: "ios_mine_menu"}
+            - {type: "accessibilityid",timeout: "5",value: "首页",desc: "首页",name: "ios_home_menu"}
+            - {type: "accessibilityid",timeout: "5",value: "书影音",desc: "书影音",name: "ios_book_menu"} 
+            - {type: "accessibilityid",timeout: "5",value: "小组",desc: "小组",name: "ios_group_menu"}
+            - {type: "accessibilityid",timeout: "5",value: "市集",desc: "市集",name: "ios_market_menu"}                      
+    - page:
+        pageName: com.testfan.ui.auto.yml.douban.pageObject.LoginPage
+        value: 
+        desc: 登录页面元素
+        locators:
+            - {type: "id",timeout: "5",value: "com.douban.frodo:id/left",desc: "帐号密码登录",name: "pwdlogin"}
+            - {type: "id",timeout: "5",value: "com.douban.frodo:id/delete",desc: "清除文本",name: "delete"}
+            - {type: "id",timeout: "5",value: "com.douban.frodo:id/input_user_name",desc: "用户名",name: "username"}
+            - {type: "id",timeout: "5",value: "com.douban.frodo:id/input_password",desc: "密码",name: "password"}
+            - {type: "xpath",timeout: "5",value: "//*[@text='登录']",desc: "登录按钮",name: "loginBtn"}
+            - {type: "accessibilityid",timeout: "5",value: "帐号密码登录",desc: "帐号密码登录",name: "ios_pwdlogin"}
+            - {type: "accessibilityid",timeout: "5",value: "清除文本",desc: "清除文本",name: "ios_delete"}
+            - {type: "xpath",timeout: "5",value: "//XCUIElementTypeTextField",desc: "用户名",name: "ios_username"}
+            - {type: "xpath",timeout: "5",value: "//XCUIElementTypeSecureTextField",desc: "密码",name: "ios_password"}
+            - {type: "accessibilityid",timeout: "5",value: "登录",desc: "登录按钮",name: "ios_loginBtn"}

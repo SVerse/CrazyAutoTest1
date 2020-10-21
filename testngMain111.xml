@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests" thread-count="1">
+    <listeners>
+        <listener class-name="com.crazy.auto.listeners.ExtentIReporterListenerUtil"/>
+        <listener class-name="com.crazy.auto.listeners.TestListener"/>
+    </listeners>
+    <test name="127.0.0.1:62001">
+        <parameter name="udid" value="127.0.0.1:62001"/>
+        <parameter name="port" value="5021"/>
+        <parameter name="platform" value="android"/>
+        <classes>
+            <class name="com.crazy.mty.tests.MTYMyTravelTests"/>
+            <class name="com.crazy.mty.tests.MTYPersonInfoTests"/>
+            <class name="com.crazy.mty.tests.MTYTests"/>
+            <class name="com.crazy.mty.tests.MTYTests3"/>
+        </classes>
+    </test>
+    <test name="127.0.0.1:62001">
+        <parameter name="udid" value="127.0.0.1:62001"/>
+        <parameter name="port" value="5021"/>
+        <parameter name="platform" value="android"/>
+        <classes>
+            <class name="com.crazy.tests.DouBanTests"/>
+            <class name="com.crazy.tests.MallHouTests1223"/>
+            <class name="com.crazy.tests.MallTests0308"/>
+            <class name="com.crazy.tests.MTXCases"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<suite name="Suite" parallel="tests" thread-count="2">
+
+	<listeners><!-- 监听器设置，生成测试报告的监听器，不要改此处代码 -->
+ 		<listener class-name="com.crazy.auto.listeners.ExtentIReporterListenerUtil"></listener><!--extentreport报告的监听 -->
+<!-- 		<listener class-name="org.uncommons.reportng.HTMLReporter" />reprotng报告的监听 -->
+		<!-- <listener class-name="com.crazy.auto.listeners.RetryListener"/> --><!-- 这是失败重试的监听 -->
+		<listener class-name='com.crazy.auto.listeners.TestListener'/><!--失败截图的监听 -->
+
+	</listeners>
+
+	<test name="mtx商城Chrome">
+		<parameter name="browserType" value="chrome" />
+		<!-- <parameter name="driverpath " value="/xxx/xxx/xxx" /> -->
+		<classes>
+				<class name="com.crazy.tests.MTXCases" />
+		</classes>
+	</test> -->
+	<test name="mtx商城火狐">
+		<parameter name="browserType" value="chrome" />
+		<classes>
+				<class name="com.crazy.tests.MTXCases" />
+		</classes>
+	</test>
+
+</suite>  

@@ -1,0 +1,49 @@
+pages:
+    - page:
+        pageName: com.testfan.ui.auto.yml.TripAdvisor.pageObject.MTYHomePage
+        value: 
+        desc: 首页
+        locators:
+            - {type: "xpath",timeout: "5",value: "//*[@text='我的']",desc: "我的",name: "mine_menu"}
+            - {type: "xpath",timeout: "5",value: "//*[@text='首页']",desc: "首页",name: "home_menu"}
+            - {type: "xpath",timeout: "5",value: "//*[@text='发现']",desc: "发现",name: "find_menu"} 
+            - {type: "xpath",timeout: "5",value: "//*[@text='我的旅行']",desc: "我的旅行",name: "mytravel_menu"}
+            - {type: "xpath",timeout: "5",value: "//*[@text='创建']",desc: "创建",name: "create_menu"}                     
+    - page:
+        pageName: com.testfan.ui.auto.yml.TripAdvisor.pageObject.MTYMinePage
+        value: 
+        desc: 我的页面
+        locators:
+            - {type: "id",timeout: "5",value: "com.tripadvisor.tripadvisor.daodao:id/btn_dd_home_me_tab_login",desc: "登录",name: "loginlink"}
+            - {type: "id",timeout: "5",value: "iv_dd_home_me_tab_avatar",desc: "头像",name: "avatar"}
+    - page:
+        pageName: com.testfan.ui.auto.yml.TripAdvisor.pageObject.MTYLoginPage
+        value: 
+        desc: 登录页面
+        locators:
+            - {type: "xpath",timeout: "5",value: "//*[@text='账号密码登录']",desc: "账号密码登录",name: "pwdlogin"}
+            - {type: "id",timeout: "5",value: "edit_text_dd_login_account_input",desc: "用户名",name: "username"}
+            - {type: "id",timeout: "5",value: "edit_text_dd_login_password_input",desc: "密码",name: "password"}
+            - {type: "xpath",timeout: "5",value: "(//*[@text='登录'])[2]",desc: "登录按钮",name: "loginbtn"}
+    - page:
+        pageName: com.testfan.ui.auto.yml.TripAdvisor.pageObject.MTYPersonInfoPage
+        value: 
+        desc: 个人信息页面
+        locators:
+            - {type: "xpath",timeout: "5",value: "//*[@text='编辑简介']",desc: "编辑简介",name: "editinfo"}
+            - {type: "id",timeout: "5",value: "com.tripadvisor.tripadvisor.daodao:id/profile_user_image",desc: "用户头像",name: "userimage"}
+            - {type: "id",timeout: "5",value: "fab",desc: "fab",name: "fab"}
+            - {type: "id",timeout: "5",value: "com.android.documentsui:id/icon_mime",desc: "相册图片",name: "icons"}
+            - {type: "xpath",timeout: "5",value: "//*[@text='确认']",desc: "确认",name: "confirm"}
+            - {type: "xpath",timeout: "5",value: "//*[@text='保存']",desc: "保存",name: "save"}
+    - page:
+        pageName: com.testfan.ui.auto.yml.TripAdvisor.pageObject.MTYMyTravelPage
+        value: 
+        desc: 我的旅行页面
+        locators:
+            - {type: "id",timeout: "5",value: "com.tripadvisor.tripadvisor.daodao:id/floating_action_button",desc: "添加按钮",name: "add"}
+            - {type: "id",timeout: "5",value: "com.tripadvisor.tripadvisor.daodao:id/trip_name",desc: "行程名称",name: "tripname"}
+            - {type: "id",timeout: "5",value: "com.tripadvisor.tripadvisor.daodao:id/fab_create_trip_button",desc: "创建旅程",name: "create_trip"}
+            - {type: "xpath",timeout: "5",value: "//*[@text='创建']",desc: "创建",name: "create"}
+            - {type: "id",timeout: "5",value: "com.tripadvisor.tripadvisor.daodao:id/trip_list_trip_name",desc: "表单上的行程名称",name: "listtrapname"}
+            

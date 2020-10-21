@@ -1,0 +1,1 @@
+{"uuid":"78c572f3-bfc8-4c4c-9cdc-db87c34fc9d1","name":"com.mtx.autotest05.MtxLoginTest","children":["55ad6bf8-667f-4d77-b87a-35bf8aceb311"],"befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1589606112070,"stop":1589606128966}],"afters":[],"links":[],"start":1589606112053,"stop":1589606141023}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="com.crazy.auto.listeners.ExtentIReporterListenerUtil"/>
+        <listener class-name="com.crazy.auto.listeners.TestListener"/>
+    </listeners>
+    <test name="127.0.0.1:62001">
+        <parameter name="udid" value="127.0.0.1:62001"/>
+        <parameter name="port" value="6110"/>
+        <parameter name="platform" value="android"/>
+        <classes>
+            <class name="com.crazy.mty.tests.MTYMyTravelTests"/>
+        </classes>
+    </test>
+</suite>
